@@ -15,44 +15,93 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find a city" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ib-j2-UXP">
-                                <rect key="frame" x="20" y="392" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="22005-voda-dikaya_mestnost-priroda-gornyj_hrebet-park-1080x1920" translatesAutoresizingMaskIntoConstraints="NO" id="JYW-RX-vRX">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a city" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ib-j2-UXP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="WI4-cJ-hGK"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qyf-rX-Pdu">
-                                <rect key="frame" x="0.0" y="470" width="414" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qyf-rX-Pdu">
+                                <rect key="frame" x="0.0" y="476" width="414" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="FtR-YC-rzt"/>
+                                </constraints>
                             </pickerView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Tomsk" translatesAutoresizingMaskIntoConstraints="NO" id="Frt-m7-f1V">
-                                <rect key="frame" x="0.0" y="426" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <searchBar contentMode="redraw" placeholder="Tomsk" translatesAutoresizingMaskIntoConstraints="NO" id="Frt-m7-f1V">
+                                <rect key="frame" x="0.0" y="78" width="414" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Atc-A6-Rl8"/>
+                                </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qr9-YD-KcI">
-                                <rect key="frame" x="192" y="640" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBc-v0-w8g">
+                                <rect key="frame" x="0.0" y="186" width="414" height="282"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tomsk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJy-jN-5iP">
+                                <rect key="frame" x="0.0" y="134" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="bI8-Eo-lZY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qr9-YD-KcI">
+                                <rect key="frame" x="172" y="646" width="71" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="MTl-tJ-tTF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="OK"/>
                                 <connections>
                                     <action selector="okButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p7a-vM-zgR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBc-v0-w8g">
-                                <rect key="frame" x="0.0" y="44" width="414" height="340"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JYW-RX-vRX" secondAttribute="trailing" id="5BM-ap-e56"/>
+                            <constraint firstItem="Frt-m7-f1V" firstAttribute="leading" secondItem="KJy-jN-5iP" secondAttribute="leading" id="7Bo-yl-Z35"/>
+                            <constraint firstItem="2ib-j2-UXP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="983-Mb-MNf"/>
+                            <constraint firstItem="JYW-RX-vRX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="E0P-9Z-BRk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qr9-YD-KcI" secondAttribute="bottom" constant="156" id="GT6-Z2-D7w"/>
+                            <constraint firstItem="KJy-jN-5iP" firstAttribute="top" secondItem="Frt-m7-f1V" secondAttribute="bottom" id="HFq-gP-zfc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JYW-RX-vRX" secondAttribute="bottom" id="L24-nS-sAN"/>
+                            <constraint firstItem="Qyf-rX-Pdu" firstAttribute="centerX" secondItem="Qr9-YD-KcI" secondAttribute="centerX" id="LhQ-Op-44B"/>
+                            <constraint firstItem="KJy-jN-5iP" firstAttribute="leading" secondItem="qBc-v0-w8g" secondAttribute="leading" id="LwZ-ky-2eZ"/>
+                            <constraint firstItem="2ib-j2-UXP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NKE-hc-yia"/>
+                            <constraint firstItem="2ib-j2-UXP" firstAttribute="trailing" secondItem="Frt-m7-f1V" secondAttribute="trailing" id="NdI-Eh-vfV"/>
+                            <constraint firstItem="Frt-m7-f1V" firstAttribute="top" secondItem="2ib-j2-UXP" secondAttribute="bottom" id="OKZ-8o-U6t"/>
+                            <constraint firstItem="2ib-j2-UXP" firstAttribute="leading" secondItem="Frt-m7-f1V" secondAttribute="leading" id="RHT-Kz-weK"/>
+                            <constraint firstItem="qBc-v0-w8g" firstAttribute="trailing" secondItem="Qyf-rX-Pdu" secondAttribute="trailing" id="Ra5-8T-zbr"/>
+                            <constraint firstItem="qBc-v0-w8g" firstAttribute="leading" secondItem="Qyf-rX-Pdu" secondAttribute="leading" id="SYk-a6-Xt0"/>
+                            <constraint firstItem="2ib-j2-UXP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TRs-u0-aRL"/>
+                            <constraint firstItem="KJy-jN-5iP" firstAttribute="trailing" secondItem="qBc-v0-w8g" secondAttribute="trailing" id="XLC-3q-wSx"/>
+                            <constraint firstItem="2ib-j2-UXP" firstAttribute="top" secondItem="JYW-RX-vRX" secondAttribute="top" id="bgQ-ZD-TaJ"/>
+                            <constraint firstItem="JYW-RX-vRX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dKa-Dt-MDj"/>
+                            <constraint firstItem="2ib-j2-UXP" firstAttribute="leading" secondItem="JYW-RX-vRX" secondAttribute="leading" id="fL6-45-Xzm"/>
+                            <constraint firstItem="Qr9-YD-KcI" firstAttribute="top" secondItem="Qyf-rX-Pdu" secondAttribute="bottom" constant="8" id="g17-lo-6OT"/>
+                            <constraint firstItem="qBc-v0-w8g" firstAttribute="top" secondItem="KJy-jN-5iP" secondAttribute="bottom" constant="8" id="j3Z-KT-t1o"/>
+                            <constraint firstItem="Qr9-YD-KcI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="172" id="lxE-Ve-qNB"/>
+                            <constraint firstItem="Qyf-rX-Pdu" firstAttribute="top" secondItem="qBc-v0-w8g" secondAttribute="bottom" constant="8" id="tgd-gC-6hd"/>
+                            <constraint firstItem="Frt-m7-f1V" firstAttribute="trailing" secondItem="KJy-jN-5iP" secondAttribute="trailing" id="ux1-Fy-DhG"/>
+                            <constraint firstItem="2ib-j2-UXP" firstAttribute="trailing" secondItem="JYW-RX-vRX" secondAttribute="trailing" id="xzS-d3-oW7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="label" destination="qBc-v0-w8g" id="VAo-2Y-v6L"/>
+                        <outlet property="cityLabel" destination="KJy-jN-5iP" id="5Xg-fS-LSU"/>
                         <outlet property="picker" destination="Qyf-rX-Pdu" id="I4a-xJ-SFe"/>
                         <outlet property="searchBar" destination="Frt-m7-f1V" id="pMo-MT-reA"/>
+                        <outlet property="temperatureLabel" destination="qBc-v0-w8g" id="bIs-yr-59V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -60,4 +109,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="22005-voda-dikaya_mestnost-priroda-gornyj_hrebet-park-1080x1920" width="1080" height="1920"/>
+    </resources>
 </document>

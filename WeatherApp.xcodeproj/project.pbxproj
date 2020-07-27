@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6AC3BD0D764B35211BCE99CD /* Pods_WeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B4CCF3A2D1EABC98735F46 /* Pods_WeatherApp.framework */; };
-		8718362024CC338C006FA7F0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8718361F24CC338C006FA7F0 /* Post.swift */; };
 		87D571DF24B468C40032D3C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D571DE24B468C40032D3C9 /* AppDelegate.swift */; };
 		87D571E124B468C40032D3C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D571E024B468C40032D3C9 /* SceneDelegate.swift */; };
 		87D571E324B468C40032D3C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D571E224B468C40032D3C9 /* ViewController.swift */; };
@@ -20,7 +19,6 @@
 /* Begin PBXFileReference section */
 		538A096070B8DAD2ABA08497 /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.release.xcconfig"; path = "Target Support Files/Pods-WeatherApp/Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		66B4CCF3A2D1EABC98735F46 /* Pods_WeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8718361F24CC338C006FA7F0 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		87D571DB24B468C40032D3C9 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D571DE24B468C40032D3C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87D571E024B468C40032D3C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +83,6 @@
 				87D571DE24B468C40032D3C9 /* AppDelegate.swift */,
 				87D571E024B468C40032D3C9 /* SceneDelegate.swift */,
 				87D571E224B468C40032D3C9 /* ViewController.swift */,
-				8718361F24CC338C006FA7F0 /* Post.swift */,
 				87D571E424B468C40032D3C9 /* Main.storyboard */,
 				87D571E724B468C60032D3C9 /* Assets.xcassets */,
 				87D571E924B468C60032D3C9 /* LaunchScreen.storyboard */,
@@ -212,7 +209,6 @@
 				87D571E324B468C40032D3C9 /* ViewController.swift in Sources */,
 				87D571DF24B468C40032D3C9 /* AppDelegate.swift in Sources */,
 				87D571E124B468C40032D3C9 /* SceneDelegate.swift in Sources */,
-				8718362024CC338C006FA7F0 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
