@@ -59,9 +59,14 @@
                                     <action selector="okButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p7a-vM-zgR"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="F72-sG-ZnX">
+                                <rect key="frame" x="177" y="418" width="60" height="60"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F72-sG-ZnX" secondAttribute="trailing" constant="177" id="1mP-56-Ick"/>
                             <constraint firstItem="JYW-RX-vRX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2n6-MI-SUs"/>
                             <constraint firstItem="qBc-v0-w8g" firstAttribute="top" secondItem="KJy-jN-5iP" secondAttribute="bottom" constant="59.5" id="3Mj-JK-xNT"/>
                             <constraint firstItem="JYW-RX-vRX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4sK-qm-hGL"/>
@@ -70,13 +75,16 @@
                             <constraint firstItem="2ib-j2-UXP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Dcw-Xg-fhL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qr9-YD-KcI" secondAttribute="trailing" constant="157" id="Ejl-Hv-KOo"/>
                             <constraint firstItem="Frt-m7-f1V" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MLT-y0-puQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="F72-sG-ZnX" secondAttribute="bottom" constant="384" id="OGk-6Z-OWY"/>
                             <constraint firstItem="Qr9-YD-KcI" firstAttribute="top" secondItem="Qyf-rX-Pdu" secondAttribute="bottom" constant="8" id="X3R-2g-a9N"/>
                             <constraint firstItem="KJy-jN-5iP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YSO-g4-ATv"/>
                             <constraint firstItem="qBc-v0-w8g" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="akE-B0-iux"/>
                             <constraint firstItem="2ib-j2-UXP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cGf-MB-Ski"/>
                             <constraint firstItem="Frt-m7-f1V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fkP-xC-zCc"/>
                             <constraint firstItem="Qyf-rX-Pdu" firstAttribute="top" secondItem="qBc-v0-w8g" secondAttribute="bottom" constant="7.5" id="gxe-To-c9w"/>
+                            <constraint firstItem="F72-sG-ZnX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="374" id="hIY-Wh-6d3"/>
                             <constraint firstItem="KJy-jN-5iP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="joa-NC-mq8"/>
+                            <constraint firstItem="F72-sG-ZnX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="177" id="mhd-ap-fI9"/>
                             <constraint firstItem="JYW-RX-vRX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nuu-7b-gSC"/>
                             <constraint firstAttribute="bottom" secondItem="JYW-RX-vRX" secondAttribute="bottom" id="p9f-eD-cRs"/>
                             <constraint firstItem="qBc-v0-w8g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ppK-Md-LrQ"/>
@@ -88,6 +96,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="F72-sG-ZnX" id="JTT-ff-Uw7"/>
                         <outlet property="cityLabel" destination="KJy-jN-5iP" id="5Xg-fS-LSU"/>
                         <outlet property="picker" destination="Qyf-rX-Pdu" id="I4a-xJ-SFe"/>
                         <outlet property="searchBar" destination="Frt-m7-f1V" id="pMo-MT-reA"/>

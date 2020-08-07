@@ -12,6 +12,9 @@ import SwiftyJSON
 
 class ViewController: UIViewController {
     
+    
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var picker: UIPickerView!
     @IBOutlet weak var temperatureLabel: UILabel!
@@ -23,7 +26,15 @@ class ViewController: UIViewController {
     
     let pickerData = ["London", "Moscow", "Tomsk", "Sochi", "Madrid"]
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        activityIndicator.isHidden = true
+    }
+    
     @IBAction func okButton(_ sender: UIButton) {
+        view.alpha = 0.5
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
         AF.request("http://api.weatherstack.com/current?access_key=45b333bfd48cc2c5a61bfef1be84f46a&query=\(city)").responseJSON { responseJSON in
             switch responseJSON.result {
             case .success(let value):
@@ -48,6 +59,9 @@ class ViewController: UIViewController {
     }
     
     func updateUIWithWeatherData() {
+        view.alpha = 1
+        activityIndicator.stopAnimating()
+        activityIndicator.isHidden = true
         cityLabel.text = cityResponse
         temperatureLabel.text = String(temperature)
     }
@@ -74,6 +88,9 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
 extension ViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         view.endEditing(true)
+        view.alpha = 0.5
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
         AF.request("http://api.weatherstack.com/current?access_key=45b333bfd48cc2c5a61bfef1be84f46a&query=\(searchBar.text!)").responseJSON { responseJSON in
             switch responseJSON.result {
             case .success(let value):
